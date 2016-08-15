@@ -1,0 +1,176 @@
+.ghostLogo {
+	background-image:url("../img/logo_ghost.jpg");
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+/* *** Members lists *** */
+
+.memberBox {
+	margin-bottom: 10px;
+	height: 100%;
+}
+
+	.memberBox .name {
+		border: 1px solid #ccc;
+		padding: 5px;
+		font-size: 18px;
+		color: #666;
+		background-image: url('../img/bg_light.gif');
+		background-repeat: repeat-x;
+		background-position: bottom;
+		position:relative;
+		cursor: pointer;
+	}
+
+		.memberBox .name .specials {
+			font-style: italic;
+			font-size: 10px;
+			color: #999;
+			padding-left: 10px;
+		}
+
+		.memberBox .name .toggle {
+			position:absolute;
+			right:10px;
+			color:#999;
+			font-weight:bold;
+		}
+
+	.memberBox .additionalInfo {
+		background-color: #fbfdce;
+		border: 1px solid #ccc;
+		padding: 10px;
+		display:none;
+		width: 380px;
+		margin: 0 auto;
+		margin-top: 3px;
+	}
+
+	.memberBox .additionalInfo img {
+		width: 80px;
+		height: 80px;
+		border: 1px solid #ccc;
+		display: block;
+		float:left;
+		background-color: #fff;
+		padding: 1px;
+	}
+	
+	.memberBox .additionalInfo div {
+		width: 250px;
+		float:left;
+		margin-left: 15px;
+	}
+	
+		.memberBox .additionalInfo div h3 {
+			font-size: 17px;
+			color: #666;
+			font-weight: bold;
+		}
+		
+		.memberBox .additionalInfo div a {
+			color: #d10000;
+			font-size: 10px;
+		}
+		
+		.memberBox .additionalInfo div p.bio {
+			font-size:11px;
+			color: #999;
+		}
+
+	/* *** Memberbox Lite *** */
+
+	.memberBoxLite {
+		padding: 10px;
+		margin-bottom: 20px;
+		height: 100%;
+	}
+	
+		.memberBoxLite img {
+			width: 50px;
+			height: 50px;
+			border: 1px solid #ccc;
+			display: block;
+			float:left;
+			background-color: #fff;
+			padding: 1px;
+		}
+		
+		.memberBoxLite div {
+			float:left;
+			width:70%;
+			margin-left:10px;
+			/*margin-bottom:25px*/
+		}
+		
+			.memberBoxLite div h3 {
+				font-size: 17px;
+				color: #666;
+				font-weight: bold;
+				border:none;
+			}
+			
+			.memberBoxLite div a {
+				color: #d10000;
+				font-size: 10px;
+			}
+			
+			.memberBoxLite div p.bio {
+				font-size:11px;
+				color: #999;
+				padding-top: 20px;
+			}	
+
+.memberAlphaList {
+    padding: 5px 5px 25px 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.memberAlphaList a {
+    padding: 0 2px 0 2px
+}
+
+.memberAlphaList .selected_alpha {
+    background-color: #dddddd;
+    font-weight: bold;
+    color: black;
+}
+
+/* *** Discussions *** */
+.discussionsList {}
+.discussionsList p.introDiscussions {font-size: 10px;color: #666;padding-bottom: 10px;}
+.discussionsList p a {color:#d10000}
+.discussionsList ul {margin:5px 0px 5px;}
+.discussionsList ul li {padding: 10px 7px;font-size:10px;color:#666;border-bottom:1px solid #ddd;background:url("../img/bg_lightest.jpg") bottom center repeat-x;}
+.discussionsList ul li .author {color:#d10000}
+.discussionsList ul li .date {color:#999}
+.discussionsList ul li h3 {color:#666;font-size: 15px;font-weight:bold;margin: 7px 0px;}
+.discussionsList ul li h3 a { color:#666}
+.discussionsList ul li .reply_btn {display:block;text-align:right;margin:8px 0px 10px 0px}
+.discussionsList ul li .reply_btn a {width:45px;height:13px;background:url("../img/reply_off.png") no-repeat;}
+.discussionsList ul li .reply_btn a:hover {background:url("../img/reply_on.png") no-repeat;}
+.discussionsList ul li .reply_btn img {visibility:hidden;}
+
+.discussionsList ul.discussionsBlock {display:none;width:430px;float:left;border:1px solid #ddd;}
+.discussionsList ul.discussionsBlockSelected {display:block;}
+.discussionsList ul.tabSwitcher {width:150px;float:left;}
+.discussionsList ul.tabSwitcher li {background:none #fff;border:1px solid #ccc;border:none;}
+.discussionsList ul.tabSwitcher .tabSelected {background: #fff;border:1px solid #ddd;border-left:1px solid #fff;margin-left:-1px;}
+.discussionsList ul.tabSwitcher .tabSelected a {color:#666;font-weight:bold;cursor:default;}
+
+.discussionsList .discussionsButtons {margin: 5px 0px;}
+
+/* *** *** */
+.sectorTitle {
+	margin-top: 15px;
+}
+.eventSummary p {
+	padding-bottom:7px!important;float:left;width:250px
+}
+.eventSummary span {
+	padding-bottom:7px;
+    float:left;
+    width:20px;
+    line-height: 10px;
+}

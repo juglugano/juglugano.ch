@@ -1,0 +1,26 @@
+/*
+ *  Adding beautiness to css, passing validation
+ */
+
+.memberBox .name,
+.discussionsList ul.discussionsBlock,
+.memberBox .additionalInfo,
+.discussionsList ul.tabSwitcher .tabSelected,
+.mainContainer,
+.mainContainer .event,
+.mainContainer .newsBox,
+.similFieldset
+{-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+
+#header ul#menu li a:hover,
+#header ul#menu li a.currentPage,
+#header ul#menu li a.currentPage:hover,
+.dialogWindow h2,
+.dialogWindow .registrationDialogContainer
+{-moz-border-radius: 3px;-webkit-border-radius: 3px;}
+
+.discussionsList ul.discussionsBlock
+{-moz-border-radius-topright:0px;-webkit-border-radius-topright:0px;border-top-right-radius:0;}
+
+.discussionsList ul.tabSwitcher .tabSelected
+{-moz-border-radius-topleft:0px;-webkit-border-radius-top-left:0px;-moz-border-radius-bottomleft:0px;-webkit-border-radius-bottom-left:0px;border-bottom-left-radius:0;border-top-left-radius:0;}

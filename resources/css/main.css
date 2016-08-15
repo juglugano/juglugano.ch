@@ -1,0 +1,296 @@
+/* *** Homepage stylesheet *** */
+
+			.introduction {
+				margin: 0px 0px 25px 0px;
+			}
+
+				.introduction h3 {
+					color: #666;
+					font-size: 21px;
+				}
+
+				.introduction h1 {
+					color: #d10000;
+					font-size: 42px;
+					font-weight: bold;
+					word-spacing: 10px;
+				}
+				
+				.introduction p,
+				.introduction ol li {
+					color: #666;
+					font-size: 11px;
+					line-height: 1.3em;
+					padding: 7px 0px 0px;
+				}
+				
+				.introduction ol {
+					list-style: decimal;
+					list-style-position: inside;
+				}
+				
+				.introduction h4 {
+					color: #666;
+					font-size: 13px;
+					line-height: 1.3em;
+					font-weight: bold;
+					padding: 10px 0px;					
+				}
+
+				.introduction .join {
+					display: block;
+					text-align: right;
+				}
+
+			.discussions .similLegend {
+				background-image: url("../img/comments.jpg");
+			}
+
+			.mainContainer {
+				padding: 1px;
+				border: 1px solid #eee;				
+				border-bottom: 0px;
+				margin-bottom: 10px;
+			}
+
+				.mainContainer .event {
+					padding: 5px 9px;
+					background-image: url("../img/bg_gray_fade.jpg");
+					background-repeat: no-repeat;
+					background-position: top center;
+					border: 1px solid #fff;
+					height: 170px;
+					margin-bottom: 10px;
+				}
+				
+					.mainContainer .event .mainEvent {
+						background-image: url("../img/logo.gif");
+						background-repeat: no-repeat;
+						background-position: top left;
+						height: 180px;
+						
+						padding-left: 130px;
+						padding-top: 10px;
+					}
+					
+						.mainContainer .event .mainEvent h2 {
+							color: #333;
+							font-size: 22px;
+							padding: 5px 0px;
+						}
+						
+						.mainContainer .event .mainEvent h3 {
+							color: #666;
+							line-height: 1em;
+							font-size: 16px;
+						}
+						
+						.mainContainer .event .mainEvent h4 {
+							color: #aaa;
+							font-size: 15px;
+						}
+						
+						.mainContainer .event .mainEvent .eventRegister {
+							text-align:center;
+							display:block;
+							padding-top: 30px;
+						}
+
+				.mainContainer .newsBox {
+					padding: 5px 9px;
+					background-image: url("../img/bg_gray_fade.jpg");
+					background-repeat: no-repeat;
+					background-position: center top;
+					border: 1px solid #fff;
+				}
+				
+					.newsBox h3 {
+						color: #aaa;
+						font-size: 18px;
+						padding: 5px 23px;
+						background-image: url("../img/newspaper.gif");
+						background-repeat: no-repeat;
+						background-position: center left;
+					}
+					
+					.newsBox img {
+						display:block;
+						width: 50px;
+						height: 50px;
+						padding: 2px;
+						border: 1px solid #ccc;
+						float:left;
+						margin-bottom: 10px;						
+					}
+					
+					.newsBox .newsBody {
+						display: block;
+						float:left;
+						margin-left: 10px;
+						width: 300px;
+						margin-bottom: 15px;
+					}
+					
+						.newsBox .newsBody h4 {
+							font-size: 12px;
+							font-weight: bold;
+							color: #444;
+							margin: 4px 0px;
+						}
+						
+						.newsBox .newsBody p {
+							color: #777;
+							font-size: 11px;
+						}
+
+							.newsBox .newsBody p.date {
+								color: #999;
+							}
+							
+					.newsBox .readAllNews {
+						display:block;
+						float:right;
+					}
+						
+						.newsBox .readAllNews img {
+							width:auto;height:auto;border:none;padding:0px;
+						}
+		
+			.feeds .similLegend {
+				background-image: url("../img/feed.jpg");
+			}
+			
+			.links .similLegend {
+				background-image: url("../img/anchor.jpg");
+			}
+		
+		.discussions h4,
+		.feeds h4,
+		.links h4 {
+			font-size: 13px;
+			color: #D10000;
+			margin: 5px 0px 2px;
+		}
+		
+		.discussions h4 a,
+		.feeds h4 a,
+		.links h4 a {
+			font-size: 13px;
+			color: #D10000;
+			margin: 5px 0px 2px;
+			text-decoration: none;
+		}
+			
+		.discussions p,
+		.feeds p,
+		.links p {
+			font-size: 10px;
+			color: #888;
+			padding-bottom: 5px;
+		}
+		
+		.discussions .readmore,
+		.feeds .readmore ,
+		.links .readmore {
+			display: block;
+			text-align: right;
+			margin-top: 5px;
+		}
+		
+		
+
+/* *** Simulating Fieldset/Legend *** */
+
+.similFieldset {
+	margin-top: 10px;
+	padding: 16px 8px 8px;
+	border: 1px solid #ddd;
+	position: relative;
+}
+
+	.similFieldset .similLegend {
+		background-color: #fff;
+		padding: 0px 7px 3px 27px;
+		font-size: 18px;
+		color: #aaa;
+		top: -8px;
+		display: inline;
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: 7px top;
+	}
+
+/* *** */
+
+/* *** Home Sponsoring *** */
+.homeSponsoring {text-align:center}
+.homeSponsoring h4 {color:#AAAAAA;font-size:14px;margin-bottom:14px;}
+.homeSponsoring img {padding:10% 0px;}
+
+/* News Archive */
+.newsArchive h4 {font-size:14px!important;line-height:18px;margin:0px 0px 3px}
+
+/* Book Review */
+.book {
+	font-size: 2em;
+}
+	.book * {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.book img {
+		padding: 5px;
+		border: 1px solid #ccc;
+	}
+	.book .title {
+		font-size: 2em;
+		color: #666;
+		margin: 0 0 3px 0;
+	}
+	.discussionsList .book h4.author {
+		font-size: 1.5em;
+		color: #999;
+		margin: 5px 0;
+	}
+	.book h5 {
+		margin: 15px 0 0;
+		font-size: 1.2em;
+		color: #999;
+	}
+	.book .review {
+		width: 275px;
+		padding: 5px;
+	}
+	.book .keywords {
+		color: #999;
+		font-size: 1.1em;
+		margin: 5px 0;
+	}
+	.book span.info {
+		color:#999;display:block;margin:7px 0;font-size: 1.2em;
+	}
+	.book span.info strong {
+		font-weight: bold;
+	}
+
+.footerBanners {
+	margin-top:10px;margin-bottom:-35px
+}
+
+.footerBanners .jazoon {
+	display:block;
+	text-align:center;
+	margin-top: 10px;
+}
+.bulletList {
+	list-style: circle inside;
+	
+}
+.bulletList li{
+	font-size:12px ;
+	color:#666666;
+	line-height: 15px;
+}
+.sponsor_link {
+    display: inline;
+    font-size: 12px;
+}

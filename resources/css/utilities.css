@@ -1,0 +1,15 @@
+.clearfix:after { 
+        /* Clearfix cleans floated divs. The first rule is for standard compilant browser, the second for IE7 only */
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fLeft { float:left; }
+.fRight { float:right; }

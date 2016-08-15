@@ -1,0 +1,532 @@
+/* *** Structure stylesheet *** 
+ * @author Luca Manno
+ */
+
+body {
+	font-family: "Bitstream Vera Sans", Arial, Helvetica, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color:#D10000;text-decoration:none;
+}
+
+/* UTILITIES */
+.clear {
+	clear:both;
+}
+
+.ghost {
+	color: #ccc;
+	font-size: 18px;
+}
+
+.hidden {
+	display: none!important;
+}
+
+/* *** main container *** */
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+/* *** header *** */
+
+#header {border-bottom:1px solid #ccc;position:relative;height:50px;}
+
+	#header ul#menu {
+		/*_height:35px; IE6 hack */
+		padding-top:15px;
+	}
+			
+		#header ul#menu li {
+			display:inline;
+			margin-right: 25px;
+		}
+			
+			#header ul#menu li a {
+				font-variant:small-caps;
+				text-transform:uppercase;
+				font-size:9px;
+				/*_font-size: 12px; IE6 hack */
+				color:#666;
+				letter-spacing: 1px;
+				font-weight: bold;
+				text-decoration: none;
+				padding: 5px 10px;
+				border: 1px solid #fff;		
+			}
+				
+				#header ul#menu li a:hover {
+					color: #D10000;
+					background-color: #fff;
+					border: 1px solid #D10000;
+					background-position: top center;
+				}
+				
+				#header ul#menu li a.currentPage,
+				#header ul#menu li a.currentPage:hover {
+					background-color: #D10000;
+					color: #fff;
+					border: 1px solid #fff;
+				}
+		
+	#header #logos {
+		padding-top:5px;
+		position:absolute;
+		top:0px;
+		right:0px;
+	}
+
+#footer {
+	margin: 30px 0px;
+	padding: 15px 0px 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-right: 0px;
+	border-left: 0px;
+}
+
+	#footer .licenseJava {
+		float:left;width:55%;text-align:left;
+	}
+	
+	#footer .licenseCC {
+		float:right;width:30%;text-align:right;
+	}
+	
+		#footer .licenseCC div {
+			float:right;
+			margin-left:10px;
+		}
+
+			#footer .licenseCC div a {
+				float:right;
+				clear:both;
+			}
+
+	#footer p {
+		color: #666;
+		font-size: 9px;
+		padding-top: 5px;
+	}
+
+/* *** Buttons *** */
+.eventRegister {
+	text-align:right;
+	display:block;
+}
+
+/* *** Columns *** */
+		
+.colMedium {
+	width: 310px;
+	float:left;
+	margin-top: 15px;
+}
+
+.colLarge {
+	width: 410px;
+	margin: 15px 20px 0px;
+	float:left;
+}
+
+	.colExtraLarge {
+		width: 610px;
+		margin: 15px 20px 0px;
+		float:left;
+	}
+
+.colSmall {
+	width: 200px;
+	float:left;
+	margin-top: 15px;
+}
+
+/* *** Group Form *** */
+.subscribeToGroup {
+	margin-bottom: 25px;
+}
+
+	.subscribeToGroup .similLegend {
+				background-image: url("../img/comments.jpg");
+	}
+
+	.subscribeToGroup h4 {
+		font-size: 12px;
+		color: #D10000;
+	}
+	
+	.subscribeToGroup form {
+		height: 100%;
+	}
+	
+	.subscribeToGroup label {
+		font-size: 10px;
+		color: #666;
+		display:block;
+		margin:7px 0px;
+	}
+
+	.subscribeToGroup input{
+		border: 1px solid #ccc;
+		font-size: 12px;
+		display:block;
+		width: 98%;
+		color: #666;
+	}
+	
+		.subscribeToGroup input:focus{
+			border: 1px solid #D10000;
+		}
+	
+	.subscribeToGroup button{
+		width: 73px;
+		height: 15px;
+		border: none;
+		background:transparent url('../img/submit_btn.png') bottom left no-repeat;
+		cursor: pointer;
+		float:right;
+		margin-top: 5px;
+	}
+	
+		.subscribeToGroup button:hover {
+			background:transparent url('../img/submit_btn.png') no-repeat;
+			background-position: 0% 1%;
+		}
+		
+/* *** Join Form Container  *** */
+
+#joinContainer p {
+	padding: 5px 0px 15px;
+	font-size: 12px;
+	color: #666;
+}
+
+#joinContainer input,
+#joinContainer textarea {
+	border: 1px solid #ccc;
+	font-size: 12px;
+	display:block;
+	width: 60%;
+	color: #666;
+	margin-bottom: 10px;
+	margin-top: 3px;
+}
+	
+	#joinContainer input.checkbox {
+		border: none;
+		width: auto;
+		display: inline;
+		float:left;
+	}	
+
+#joinContainer h3{
+	color: #666;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+#joinContainer label {
+	color: #666;
+	font-size: 12px;
+}
+
+	#joinContainer input.sub{
+		width: 73px;
+		height: 15px;
+		border: none;
+		background:transparent url('../img/submit_btn.png') top left no-repeat;
+		cursor: pointer;
+		margin-top: 5px;
+	}
+	
+/* *** Calendar *** */
+.calendar {
+	width:60px;
+}
+	.calendar .monthYear {
+		background-color:#D10000;height:13px;border:1px solid #eee;font-size:9px;color:#fff;margin-bottom:2px;text-align:center;border:1px solid #eee;border-right:1px solid #999;border-bottom:1px solid #999;
+	}
+
+		.calendar .monthYear span {
+			display:block;margin-top:2px;font-weight:bold;
+		}
+
+	.calendar .day {
+		background-color:#fff;height:32px;border:1px solid #eee;font-size:30px;color:#000;font-weight:bold;text-align:center;border-right:1px solid #999;border-bottom:1px solid #999;
+	}
+	
+/* *** Events *** */
+#events .nextEvent {
+	padding: 5px;
+	background-color: #fbfdce;
+	border: 1px solid #eee;
+	border-right-color: #ccc;
+	border-bottom-color: #ccc;
+	/*_height: 100%; IE6 */
+}
+#events .nextEvent h2 {
+	color: #ccc;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+	#events .nextEvent .calendar {
+		float:left;
+		margin-right:20px;
+		margin-left: 5px;
+	}
+
+	#events .nextEvent .details {
+		float:left;
+		width: 75%;
+		margin-bottom: 20px;
+	}
+	
+			#events .nextEvent .details h3 {
+				color: #333;
+				font-size: 18px;
+				margin-bottom: 10px;
+			}	
+			
+				#events .nextEvent .details h3 a{
+					color: #D10000;
+					text-decoration: none;
+				}
+
+			#events .nextEvent .details p {
+				color: #999;
+				font-size: 12px;
+			}
+			
+#events .pastEvents {
+	padding: 5px;
+	margin-top: 10px;
+}
+
+	#events .pastEvents h2 {
+		color: #ccc;
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	#events .pastEvents li {
+		font-size: 10px;
+		margin-bottom: 7px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #ccc;
+	}
+
+		#events .pastEvents li a:hover div.detail {
+			color: #D10000;
+		}
+
+		#events .pastEvents li div.date {
+			color: #999;
+			float: left;
+			width: 20%;
+		}
+	
+		#events .pastEvents li div.detail {
+			color: #666;
+			float: left;
+			width: 70%;
+		}
+		
+		#events .pastEvents li img.more {
+			display:block;
+			float:right;
+		}
+		
+		/* *** Event Detail *** */
+		#eventDetail .calendar {
+			float:left;
+			margin-right:20px;
+			margin-left: 5px;
+		}
+	
+		#eventDetail .details {
+			float:left;
+			width: 75%;
+			margin-bottom: 20px;
+		}
+		
+				#eventDetail .details h2 {
+					color: #D10000;
+					font-size: 21px;
+					margin-bottom: 10px;
+				}
+
+				#eventDetail .detailSingleEvent h3.sectorTitle {
+					color: #ccc;
+					font-size: 21px;
+					margin-bottom: 10px;
+					border-bottom: 1px solid #ccc;					
+				}
+
+				#eventDetail .detailSingleEvent p,
+				#eventDetail .details p  {
+					color: #666;
+					font-size: 12px;
+					padding-bottom: 20px;
+				}
+				
+				/* Table */
+				#eventDetail .eventAgenda {
+					font-size: 12px;
+					color: #666;
+					margin: 7px 0px 12px 0px;
+					width: 100%;
+				}
+				
+				#eventDetail .eventAgenda td {
+					height: 38px;
+					vertical-align: top;
+					padding: 7px 0px;
+				}
+				
+					#eventDetail .eventAgenda td span {
+						font-size:11px;
+						color: #999;
+						padding: 3px 0px;
+					}
+				
+				#eventDetail .eventAgenda a {
+					color: #D10000;
+					text-decoration: none;
+				}
+				
+				#eventDetail .eventSpeech h4 {
+					color: #333;
+					font-size: 18px;
+					margin: 5px 0px;
+				}
+				
+					#eventDetail .eventSpeech p,
+					#eventDetail .eventSpeech ul {
+						padding: 3px 5px;
+						font-size: 12px;
+						line-height: 16px;
+						color: #666;
+					}
+					/*
+					#eventDetail .eventSpeech ul li {
+						line-height: 16px;
+					}
+					*/
+					#eventDetail .detailSingleEvent .detailMore {
+						padding: 5px;
+					}
+					
+						#eventDetail .detailSingleEvent .detailMore #map {
+							width:99%;height:250px;border:1px solid #eee;margin-bottom:20px;
+						}
+					
+						#eventDetail .detailSingleEvent .detailMore h4 {
+							font-size: 15px;
+							color: #999;
+							margin-bottom: 5px;
+							font-weight: bold;
+						}
+
+						#eventDetail .detailSingleEvent .detailMore p {
+							font-size: 12px;
+							padding-bottom: 0px;
+						}
+						
+		.detailEventVenue h3 {
+			color: #D10000;
+			font-size: 15px;
+			font-weight: bold;
+			border-bottom: 1px solid #D10000;
+		}
+		
+			.detailEventVenue h4 {
+				color: #999;
+				font-size: 12px;
+			}
+
+			.detailEventVenue p {
+				color: #ccc;
+			}
+
+			.detailEventVenue #map {
+				width: 175px;
+				height: 175px;
+				margin: 2px;
+				border: 1px solid #ccc;
+			}
+			
+/* *** Registration Dialog *** */
+.dialogWindow {
+	display:none;z-index:11;width:500px;height:220px;margin-left:-250px;margin-top:-110px;top:50%;left:50%;position:absolute;
+}
+
+	.dialogWindow h2 {
+		padding:5px;border:2px solid #d10000;background-color:#d10000;height:15px;font-size:12px;font-weight:bold;color:#fff;position:relative;
+	}
+
+		.dialogWindow h2 a {
+			position:absolute;right:5px;top:7px;
+		}
+		
+	.dialogWindow .registrationDialogContainer {
+		height:100%;font-size:11px;color:#666;padding:7px;border:2px solid #eee;background-color:#fff;margin-top:3px;
+	}
+	
+		.dialogWindow .registrationDialogContainer .col {
+			float:left;width:200px;
+		}
+	
+		.dialogWindow .registrationDialogContainer form {
+			font-size: 11px;
+			width: 400px;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+		
+					.dialogWindow .registrationDialogContainer form label {
+						color: #666;
+						font-size: 12px;
+					}
+		
+					.dialogWindow .registrationDialogContainer form input {
+						display:block;
+						border: 1px solid #ccc;
+						margin: 2px 0px 10px 0px;
+						width:180px;
+					}
+					
+					.dialogWindow .registrationDialogContainer form input.submit {
+						width: 73px;
+						height: 15px;
+						border: none;
+						background:transparent url('../img/submit_btn.png') top left no-repeat;
+						cursor: pointer;
+						float:right;
+						margin: 5px 18px 0px 105px;
+					}
+					
+/* *** Sponsor *** */
+.sponsor .sponsorLogo {
+	float:left;
+	width:10%;
+	margin-right:10px;
+	padding-top:5px;
+}
+.sponsor .sponsorWording {
+	float:left;width:80%;
+}
+	.sponsor .sponsorWording h3 {
+		color:#D10000;font-size:18px;margin-top:3px;margin-bottom:10px;
+	}
+	
+	.sponsor .sponsorWording p {
+		color:#666;font-size:12px;
+	}
+.sponsorSide {
+	font-size:12px;color:#666;
+}
